@@ -47,11 +47,13 @@ describe('Siskel', function() {
 
     it('should update its comparator', function() {
       collection.sortByField('rating');
+      console.log(collection.comparator)
       expect(collection.comparator).to.equal('rating');
     });
 
     it('should trigger sort when the comparator is changed', function() {
       collection.sortByField('rating');
+      console.log(collection.comparator)
       expect(collection.sort).to.have.been.called;
     });
 
